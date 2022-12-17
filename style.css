@@ -121,3 +121,9 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
 .nav-bar a {
   text-decoration: none;
 }
+
+.home-title:hover {
+
+ background-color: #56CCF2;
+padding: 15px;
+}
