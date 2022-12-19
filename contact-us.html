@@ -35,8 +35,129 @@
 
 
   <div data-role="main" class="ui-content">
+    <div class="container">
+      
+  
+      <form action="mail.php" method="POST">
+        <h1>Contact Us</h1>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+          <label for="subject">Subject:</label>
+          <input type="text" name="subject" id="subject" placeholder="" required>
+          <label for="message">Message</label>
+          <textarea name="message" cols="30" rows="10" required></textarea>
+          <input type="submit" value="Send">
+      </form>
+  </div>
 
+  <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background: #1b1c1e;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display',
+        serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 59px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+p {
+    color: #d2d2d2;
+}
+
+p,
+input,
+textarea,
+label {
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 5%;
+    background-color: #FFF;
+    height: 80%;
+    width: 600px;
+    border-radius: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+input,
+textarea,
+label {
+    display: block;
+    margin: 0 auto;
+    width: 200%;
+    color: #000000;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #828282;
+}
+
+input[type=submit] {
+    background-color: #800676;
+    padding: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-bottom: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+input[type=submit]:hover {
+    background: #FFF;
+    color: #1b1c1e;
+}
+
+input,
+textarea {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 1px solid #9707bb;
+}
+
+a {
+    color: #828282;
+    font-style: italic;
+}
+
+a:hover {
+    color: #fff;
+}
+</style>
 
 </div>
 
@@ -44,7 +165,7 @@
   <ul class="nav-bar">
     <li><a href="./index.html">Home</a></li>
     <li><a href="./gallery.html">Gallery</a></li>
-    <li><a href="./contact-us.html">Contcat Us</a></li>
+    <li><a href="./contact-us.html">Contact Us</a></li>
   </ul>
 </div>
 </div>
